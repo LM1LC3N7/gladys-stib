@@ -60,9 +60,11 @@ minutes, the notices every 2 hours.
   Needs the STIB network device. Filter on a line, or on the notices about
   your stops and lines. Variables: the line, the notice, the lines concerned.
 
-The action **next departures** gives `{{list}}` (one line per departure) and
-`{{next_line}}`, `{{next_destination}}`, `{{next_minutes}}`, `{{message}}` for
-a message or a condition.
+The action **next departures** gives `list` (one line per departure) and
+`next_line`, `next_destination`, `next_minutes`, `message` for a message or
+a condition. The following actions of the scene find them in their variable
+list (written `{{<step>.<action>.<key>}}`, for instance `{{0.0.list}}` when
+this action is the first of the scene).
 
 ## Troubleshooting
 

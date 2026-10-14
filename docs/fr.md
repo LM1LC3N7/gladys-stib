@@ -62,9 +62,11 @@ clé : les départs toutes les 20 minutes, les avis toutes les 2 heures.
   concernant vos arrêts et lignes. Variables : la ligne, l'avis, les lignes
   concernées.
 
-L'action **prochains départs** donne `{{list}}` (un départ par ligne) et
-`{{next_line}}`, `{{next_destination}}`, `{{next_minutes}}`, `{{message}}`
-pour un message ou une condition.
+L'action **prochains départs** donne `list` (un départ par ligne) et
+`next_line`, `next_destination`, `next_minutes`, `message` pour un message
+ou une condition. Les actions suivantes de la scène les trouvent dans leur
+liste de variables (écrites `{{<étape>.<action>.<clé>}}`, par exemple
+`{{0.0.list}}` quand cette action est la première de la scène).
 
 ## Dépannage
 
