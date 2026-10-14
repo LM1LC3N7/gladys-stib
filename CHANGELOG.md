@@ -10,6 +10,8 @@ the notes of the version's GitHub Release.
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-10-14
+
 ### Added
 
 - One device per watched stop platform (typed in the configuration, by name
@@ -28,3 +30,6 @@ the notes of the version's GitHub Release.
   time (30 s by default); without it the integration stays within the
   anonymous quota (departures every 20 minutes).
 - Stop and destination names in French or Dutch.
+
+[Unreleased]: https://github.com/LM1LC3N7/gladys-stib/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/LM1LC3N7/gladys-stib/releases/tag/v0.1.1

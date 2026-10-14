@@ -1,6 +1,6 @@
 {
   "name": "gladys-stib",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Gladys Assistant external integration for STIB-MIVB (Brussels public transport): next metro, tram and bus departures at your stops, network disturbances, scene triggers and a dashboard widget. Unofficial, not affiliated with STIB-MIVB.",
   "type": "module",
