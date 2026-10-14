@@ -1,0 +1,418 @@
+{
+  "results": [
+    {
+      "gpscoordinates": "{\"latitude\":50.835888,\"longitude\":4.355039}",
+      "id": "6361",
+      "name": "{\"fr\":\"LOUISE\",\"nl\":\"LOUIZA\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.838883,\"longitude\":4.363086}",
+      "id": "4952",
+      "name": "{\"fr\":\"PORTE DE NAMUR\",\"nl\":\"NAAMSEPOORT\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.840792,\"longitude\":4.366343}",
+      "id": "8301",
+      "name": "{\"fr\":\"TRONE\",\"nl\":\"TROON\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.840537,\"longitude\":4.366324}",
+      "id": "6432",
+      "name": "{\"fr\":\"TRONE\",\"nl\":\"TROON\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.841632,\"longitude\":4.364819}",
+      "id": "1124",
+      "name": "{\"fr\":\"TRONE\",\"nl\":\"TROON\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.863543,\"longitude\":4.329023}",
+      "id": "0472",
+      "name": "{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.833183,\"longitude\":4.357651}",
+      "id": "5470",
+      "name": "{\"fr\":\"STEPHANIE\",\"nl\":\"STEFANIA\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.834945,\"longitude\":4.355876}",
+      "id": "3624B",
+      "name": "{\"fr\":\"LOUISE\",\"nl\":\"LOUIZA\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.837038,\"longitude\":4.408147}",
+      "id": "2283",
+      "name": "{\"fr\":\"MONTGOMERY\",\"nl\":\"MONTGOMERY\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.838185,\"longitude\":4.361699}",
+      "id": "8312",
+      "name": "{\"fr\":\"PORTE DE NAMUR\",\"nl\":\"NAAMSEPOORT\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.839217,\"longitude\":4.363777}",
+      "id": "1654",
+      "name": "{\"fr\":\"PORTE DE NAMUR\",\"nl\":\"NAAMSEPOORT\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.840086,\"longitude\":4.365335}",
+      "id": "2681",
+      "name": "{\"fr\":\"TRONE\",\"nl\":\"TROON\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.841001,\"longitude\":4.366499}",
+      "id": "8302",
+      "name": "{\"fr\":\"TRONE\",\"nl\":\"TROON\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.835061,\"longitude\":4.35424}",
+      "id": "8321",
+      "name": "{\"fr\":\"LOUISE\",\"nl\":\"LOUIZA\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.833556,\"longitude\":4.357177}",
+      "id": "5068F",
+      "name": "{\"fr\":\"STEPHANIE\",\"nl\":\"STEFANIA\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.845333,\"longitude\":4.36962}",
+      "id": "8042",
+      "name": "{\"fr\":\"ARTS-LOI\",\"nl\":\"KUNST-WET\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.839354,\"longitude\":4.355459}",
+      "id": "1285",
+      "name": "{\"fr\":\"PETIT SABLON\",\"nl\":\"KLEINE ZAVEL\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.863301,\"longitude\":4.330614}",
+      "id": "1288",
+      "name": "{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.837219,\"longitude\":4.353264}",
+      "id": "6352",
+      "name": "{\"fr\":\"POELAERT\",\"nl\":\"POELAERT\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.832778,\"longitude\":4.35697}",
+      "id": "5067",
+      "name": "{\"fr\":\"STEPHANIE\",\"nl\":\"STEFANIA\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.837806,\"longitude\":4.407955}",
+      "id": "8082",
+      "name": "{\"fr\":\"MONTGOMERY\",\"nl\":\"MONTGOMERY\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.838003,\"longitude\":4.353594}",
+      "id": "3629",
+      "name": "{\"fr\":\"POELAERT\",\"nl\":\"POELAERT\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.837356,\"longitude\":4.409229}",
+      "id": "2712",
+      "name": "{\"fr\":\"MONTGOMERY\",\"nl\":\"MONTGOMERY\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.840105,\"longitude\":4.356388}",
+      "id": "6312F",
+      "name": "{\"fr\":\"PETIT SABLON\",\"nl\":\"KLEINE ZAVEL\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.835413,\"longitude\":4.363769}",
+      "id": "2964B",
+      "name": "{\"fr\":\"QUART.ST-BONIFACE\",\"nl\":\"ST-BONIFAASWIJK\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.835086,\"longitude\":4.363978}",
+      "id": "3506",
+      "name": "{\"fr\":\"QUART.ST-BONIFACE\",\"nl\":\"ST-BONIFAASWIJK\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.836331,\"longitude\":4.337828}",
+      "id": "2531",
+      "name": "{\"fr\":\"GARE DU MIDI\",\"nl\":\"ZUIDSTATION\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.863005,\"longitude\":4.330789}",
+      "id": "1286",
+      "name": "{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.838022,\"longitude\":4.361236}",
+      "id": "8311",
+      "name": "{\"fr\":\"PORTE DE NAMUR\",\"nl\":\"NAAMSEPOORT\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.839534,\"longitude\":4.397696}",
+      "id": "8071",
+      "name": "{\"fr\":\"MERODE\",\"nl\":\"MERODE\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.83627,\"longitude\":4.338166}",
+      "id": "8351",
+      "name": "{\"fr\":\"GARE DU MIDI\",\"nl\":\"ZUIDSTATION\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.836172,\"longitude\":4.338154}",
+      "id": "2778",
+      "name": "{\"fr\":\"GARE DU MIDI\",\"nl\":\"ZUIDSTATION\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.84544,\"longitude\":4.368744}",
+      "id": "8401",
+      "name": "{\"fr\":\"ARTS-LOI\",\"nl\":\"KUNST-WET\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.863732,\"longitude\":4.329236}",
+      "id": "0471",
+      "name": "{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.839184,\"longitude\":4.399971}",
+      "id": "6463F",
+      "name": "{\"fr\":\"MERODE\",\"nl\":\"MERODE\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.837987,\"longitude\":4.405848}",
+      "id": "2286G",
+      "name": "{\"fr\":\"MONTGOMERY\",\"nl\":\"MONTGOMERY\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.836258,\"longitude\":4.33847}",
+      "id": "8352",
+      "name": "{\"fr\":\"GARE DU MIDI\",\"nl\":\"ZUIDSTATION\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.837543,\"longitude\":4.362009}",
+      "id": "3518B",
+      "name": "{\"fr\":\"PORTE DE NAMUR\",\"nl\":\"NAAMSEPOORT\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.838007,\"longitude\":4.406021}",
+      "id": "2287",
+      "name": "{\"fr\":\"MONTGOMERY\",\"nl\":\"MONTGOMERY\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.863355,\"longitude\":4.330671}",
+      "id": "1183",
+      "name": "{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.839312,\"longitude\":4.39961}",
+      "id": "7939",
+      "name": "{\"fr\":\"MERODE\",\"nl\":\"MERODE\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.839582,\"longitude\":4.355735}",
+      "id": "6366F",
+      "name": "{\"fr\":\"PETIT SABLON\",\"nl\":\"KLEINE ZAVEL\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.835176,\"longitude\":4.354622}",
+      "id": "8322",
+      "name": "{\"fr\":\"LOUISE\",\"nl\":\"LOUIZA\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.837123,\"longitude\":4.407182}",
+      "id": "0801",
+      "name": "{\"fr\":\"MONTGOMERY\",\"nl\":\"MONTGOMERY\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.863418,\"longitude\":4.330031}",
+      "id": "0473F",
+      "name": "{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.833327,\"longitude\":4.357041}",
+      "id": "5016F",
+      "name": "{\"fr\":\"STEPHANIE\",\"nl\":\"STEFANIA\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.86296,\"longitude\":4.330756}",
+      "id": "1112",
+      "name": "{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.845476,\"longitude\":4.369121}",
+      "id": "8041",
+      "name": "{\"fr\":\"ARTS-LOI\",\"nl\":\"KUNST-WET\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.863645,\"longitude\":4.330848}",
+      "id": "8763",
+      "name": "{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.837012,\"longitude\":4.353406}",
+      "id": "6313F",
+      "name": "{\"fr\":\"POELAERT\",\"nl\":\"POELAERT\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.832607,\"longitude\":4.3568}",
+      "id": "5017",
+      "name": "{\"fr\":\"STEPHANIE\",\"nl\":\"STEFANIA\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.840315,\"longitude\":4.367127}",
+      "id": "6433",
+      "name": "{\"fr\":\"TRONE\",\"nl\":\"TROON\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.835673,\"longitude\":4.355167}",
+      "id": "6314",
+      "name": "{\"fr\":\"LOUISE\",\"nl\":\"LOUIZA\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.837841,\"longitude\":4.407085}",
+      "id": "2289",
+      "name": "{\"fr\":\"MONTGOMERY\",\"nl\":\"MONTGOMERY\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.838041,\"longitude\":4.405536}",
+      "id": "2285G",
+      "name": "{\"fr\":\"MONTGOMERY\",\"nl\":\"MONTGOMERY\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.839652,\"longitude\":4.364629}",
+      "id": "1824",
+      "name": "{\"fr\":\"PORTE DE NAMUR\",\"nl\":\"NAAMSEPOORT\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.841846,\"longitude\":4.364798}",
+      "id": "1780",
+      "name": "{\"fr\":\"TRONE\",\"nl\":\"TROON\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.837822,\"longitude\":4.407364}",
+      "id": "8081",
+      "name": "{\"fr\":\"MONTGOMERY\",\"nl\":\"MONTGOMERY\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.839301,\"longitude\":4.399631}",
+      "id": "6462F",
+      "name": "{\"fr\":\"MERODE\",\"nl\":\"MERODE\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.837483,\"longitude\":4.406117}",
+      "id": "9996",
+      "name": "{\"fr\":\"MONTGOMERY\",\"nl\":\"MONTGOMERY\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.863666,\"longitude\":4.329612}",
+      "id": "0470F",
+      "name": "{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.845572,\"longitude\":4.36886}",
+      "id": "8402",
+      "name": "{\"fr\":\"ARTS-LOI\",\"nl\":\"KUNST-WET\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.839607,\"longitude\":4.398226}",
+      "id": "1156",
+      "name": "{\"fr\":\"MERODE\",\"nl\":\"MERODE\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.836739,\"longitude\":4.33708}",
+      "id": "3211",
+      "name": "{\"fr\":\"GARE DU MIDI\",\"nl\":\"ZUIDSTATION\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.838171,\"longitude\":4.36198}",
+      "id": "2967B",
+      "name": "{\"fr\":\"PORTE DE NAMUR\",\"nl\":\"NAAMSEPOORT\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.840674,\"longitude\":4.364886}",
+      "id": "2948",
+      "name": "{\"fr\":\"TRONE\",\"nl\":\"TROON\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.837555,\"longitude\":4.407424}",
+      "id": "0806",
+      "name": "{\"fr\":\"MONTGOMERY\",\"nl\":\"MONTGOMERY\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.839956,\"longitude\":4.366364}",
+      "id": "2682",
+      "name": "{\"fr\":\"TRONE\",\"nl\":\"TROON\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.839216,\"longitude\":4.398528}",
+      "id": "1136",
+      "name": "{\"fr\":\"MERODE\",\"nl\":\"MERODE\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.836241,\"longitude\":4.354848}",
+      "id": "1087",
+      "name": "{\"fr\":\"LOUISE\",\"nl\":\"LOUIZA\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.839898,\"longitude\":4.355875}",
+      "id": "1128",
+      "name": "{\"fr\":\"PETIT SABLON\",\"nl\":\"KLEINE ZAVEL\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.838508,\"longitude\":4.336507}",
+      "id": "1662",
+      "name": "{\"fr\":\"GARE DU MIDI\",\"nl\":\"ZUIDSTATION\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.836811,\"longitude\":4.337407}",
+      "id": "0636",
+      "name": "{\"fr\":\"GARE DU MIDI\",\"nl\":\"ZUIDSTATION\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.832985,\"longitude\":4.357751}",
+      "id": "5405",
+      "name": "{\"fr\":\"STEPHANIE\",\"nl\":\"STEFANIA\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.836497,\"longitude\":4.337946}",
+      "id": "0631",
+      "name": "{\"fr\":\"GARE DU MIDI\",\"nl\":\"ZUIDSTATION\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.835924,\"longitude\":4.356089}",
+      "id": "1726",
+      "name": "{\"fr\":\"LOUISE\",\"nl\":\"LOUIZA\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.838616,\"longitude\":4.33644}",
+      "id": "1664",
+      "name": "{\"fr\":\"GARE DU MIDI\",\"nl\":\"ZUIDSTATION\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.839363,\"longitude\":4.398282}",
+      "id": "8072",
+      "name": "{\"fr\":\"MERODE\",\"nl\":\"MERODE\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.86312,\"longitude\":4.330479}",
+      "id": "8764",
+      "name": "{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.840638,\"longitude\":4.364821}",
+      "id": "1734",
+      "name": "{\"fr\":\"TRONE\",\"nl\":\"TROON\"}"
+    },
+    {
+      "gpscoordinates": "{\"latitude\":50.836542,\"longitude\":4.339451}",
+      "id": "2780",
+      "name": "{\"fr\":\"GARE DU MIDI\",\"nl\":\"ZUIDSTATION\"}"
+    }
+  ],
+  "total_count": 81,
+  "parameters": {
+    "limit": 1000
+  },
+  "metadata": {
+    "fields": ["gpscoordinates", "id", "name"],
+    "data_processed_count": 81,
+    "filtered_count": 81
+  }
+}

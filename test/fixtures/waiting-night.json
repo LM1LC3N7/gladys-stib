@@ -1,0 +1,98 @@
+{
+  "results": [
+    {
+      "pointid": "8471",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"HEYSEL\",\"nl\":\"HEIZEL\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8431",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8301",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8371",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8411",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8351",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8743",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8341",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8311",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8331",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8441",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8421",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8461",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8381",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8361",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8401",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8321",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\",\"message\":{\"de\":\"LetzteDurchfahrt\",\"fr\":\"Dernier passage\",\"nl\":\"Laatste vertrek\",\"en\":\"Last departure\"}},{\"expectedArrivalTime\":\"2026-10-14T02:59:49.907+02:00\",\"lineId\":\"6\"}]"
+    }
+  ],
+  "total_count": 17,
+  "parameters": {
+    "limit": 1000
+  },
+  "metadata": {
+    "fields": ["pointid", "lineid", "passingtimes"],
+    "data_processed_count": 17,
+    "filtered_count": 17
+  }
+}

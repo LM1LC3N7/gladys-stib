@@ -1,0 +1,489 @@
+{
+  "manifest_version": 1,
+  "type": "device",
+  "name": "STIB-MIVB",
+  "description": {
+    "en": "Unofficial connector: next STIB metro, tram and bus departures at your stops, and disturbances.",
+    "fr": "Connecteur non officiel : prochains métros, trams et bus STIB à vos arrêts, et perturbations."
+  },
+  "version": "0.1.0",
+  "docker_image": "ghcr.io/lm1lc3n7/gladys-stib:0.1.0",
+  "gladys_version": ">=5.1.0",
+  "cover_image": "https://raw.githubusercontent.com/LM1LC3N7/gladys-stib/main/cover.png",
+  "categories": ["services"],
+  "transports": ["cloud"],
+  "location": true,
+  "config_schema": [
+    {
+      "key": "intro",
+      "type": "section",
+      "label": {
+        "en": "Brussels public transport in Gladys",
+        "fr": "Les transports bruxellois dans Gladys"
+      },
+      "description": {
+        "en": "Unofficial connector, not affiliated with STIB-MIVB. It reads the STIB-MIVB open data published on the Belgian Mobility portal: one device per watched stop platform with its next metros, trams and buses (line, destination, minutes) and STIB's messages (last departure, end of service), a network device with the travellers information notices, scene triggers when a vehicle approaches, at the last departure of the day and when a line gets or loses a notice, and two dashboard widgets. The stops closest to your house are suggested in Discovery; add others below. Without a subscription key the portal allows 100 requests a day: the departures are then read every 20 minutes. A free key gives real time. Source: STIB-MIVB – Open Data (CC BY 4.0).",
+        "fr": "Connecteur non officiel, sans lien avec la STIB-MIVB. Il lit les données ouvertes de la STIB-MIVB publiées sur le portail Belgian Mobility : un appareil par quai d'arrêt suivi avec ses prochains métros, trams et bus (ligne, destination, minutes) et les messages de la STIB (dernier passage, service terminé), un appareil réseau avec les avis aux voyageurs, des déclencheurs de scène quand un véhicule approche, au dernier passage du jour et quand une ligne reçoit ou perd un avis, et deux widgets. Les arrêts les plus proches de votre maison sont proposés dans Découverte ; ajoutez-en d'autres ci-dessous. Sans clé d'abonnement, le portail autorise 100 requêtes par jour : les départs sont alors lus toutes les 20 minutes. Une clé gratuite donne le temps réel. Source : STIB-MIVB – Open Data (CC BY 4.0)."
+      },
+      "links": [
+        {
+          "url": "https://www.stib-mivb.be/",
+          "label": { "en": "STIB-MIVB", "fr": "STIB-MIVB" }
+        },
+        {
+          "url": "https://data.belgianmobility.io/",
+          "label": {
+            "en": "Belgian Mobility open data portal (the data source)",
+            "fr": "Portail de données ouvertes Belgian Mobility (la source)"
+          }
+        },
+        {
+          "url": "https://api-management-opendata-production.developer.azure-api.net/signup",
+          "label": {
+            "en": "Free account for a subscription key",
+            "fr": "Compte gratuit pour une clé d'abonnement"
+          }
+        },
+        {
+          "url": "https://github.com/LM1LC3N7/gladys-stib/blob/main/docs/fr.md",
+          "label": { "en": "Guide (French)", "fr": "Guide (français)" }
+        },
+        {
+          "url": "https://github.com/LM1LC3N7/gladys-stib/blob/main/docs/en.md",
+          "label": { "en": "Guide (English)", "fr": "Guide (anglais)" }
+        }
+      ]
+    },
+    {
+      "key": "api_key",
+      "type": "secret",
+      "label": {
+        "en": "Subscription key (recommended)",
+        "fr": "Clé d'abonnement (recommandée)"
+      },
+      "description": {
+        "en": "The primary key of your free account on the Belgian Mobility developer portal. Without it, the departures are read every 20 minutes (anonymous quota). Stored encrypted by Gladys and only sent to the portal's gateway.",
+        "fr": "La clé primaire de votre compte gratuit sur le portail développeur Belgian Mobility. Sans elle, les départs sont lus toutes les 20 minutes (quota anonyme). Stockée chiffrée par Gladys et envoyée uniquement à la passerelle du portail."
+      },
+      "required": false
+    },
+    {
+      "key": "nearby_stops",
+      "type": "number",
+      "label": {
+        "en": "Stops near my home (suggested in Discovery)",
+        "fr": "Arrêts près de chez moi (proposés dans Découverte)"
+      },
+      "description": {
+        "en": "Every platform of these stops is suggested: add the directions you use.",
+        "fr": "Chaque quai de ces arrêts est proposé : ajoutez les directions que vous prenez."
+      },
+      "required": false,
+      "default": 2,
+      "min": 0,
+      "max": 5
+    },
+    {
+      "key": "stops",
+      "type": "string",
+      "label": { "en": "Stops to watch", "fr": "Arrêts à suivre" },
+      "description": {
+        "en": "Stop names or platform ids, separated by commas. Optional line filter after @ (several with |) and custom name after : — e.g. \"Louise@2|6:Metro to work, 3518B\".",
+        "fr": "Noms d'arrêts ou identifiants de quai, séparés par des virgules. Filtre de lignes facultatif après @ (plusieurs avec |) et nom personnalisé après : — ex. « Louise@2|6:Métro du matin, 3518B »."
+      },
+      "required": false,
+      "placeholder": {
+        "en": "Louise@2|6:Metro to work, Merode",
+        "fr": "Louise@2|6:Métro du matin, Merode"
+      }
+    },
+    {
+      "key": "max_departures",
+      "type": "number",
+      "label": { "en": "Departures per stop", "fr": "Départs par arrêt" },
+      "description": {
+        "en": "How many upcoming departures each stop device exposes as features.",
+        "fr": "Nombre de prochains départs exposés en fonctionnalités par arrêt."
+      },
+      "required": false,
+      "default": 3,
+      "min": 1,
+      "max": 5
+    },
+    {
+      "key": "poll_frequency",
+      "type": "number",
+      "label": { "en": "Refresh interval (s)", "fr": "Intervalle de rafraîchissement (s)" },
+      "description": {
+        "en": "With a subscription key: how often the watched stops are read, all in one request. Without a key the interval is at least 20 minutes.",
+        "fr": "Avec une clé d'abonnement : fréquence de lecture des arrêts suivis, tous en une requête. Sans clé, l'intervalle est d'au moins 20 minutes."
+      },
+      "required": false,
+      "default": 30,
+      "min": 20,
+      "max": 600
+    },
+    {
+      "key": "language",
+      "type": "select",
+      "label": {
+        "en": "Language of the stop and destination names",
+        "fr": "Langue des noms d'arrêts et de destinations"
+      },
+      "required": false,
+      "default": "fr",
+      "options": [
+        { "value": "fr", "label": { "en": "French", "fr": "Français" } },
+        { "value": "nl", "label": { "en": "Dutch", "fr": "Néerlandais" } }
+      ]
+    },
+    {
+      "key": "watch_disturbances",
+      "type": "boolean",
+      "label": {
+        "en": "Offer the \"STIB network\" device (travellers information)",
+        "fr": "Proposer l'appareil « Réseau STIB » (avis aux voyageurs)"
+      },
+      "required": false,
+      "default": true
+    }
+  ],
+  "actions": [
+    {
+      "key": "test_connection",
+      "timeout_seconds": 60,
+      "label": { "en": "Test STIB-MIVB", "fr": "Tester la STIB-MIVB" },
+      "description": {
+        "en": "Reads the stop list and checks the stops typed above.",
+        "fr": "Lit la liste des arrêts et vérifie les arrêts saisis ci-dessus."
+      }
+    },
+    {
+      "key": "search_stops",
+      "timeout_seconds": 60,
+      "label": { "en": "Search stops", "fr": "Chercher des arrêts" },
+      "description": {
+        "en": "Finds the stops whose name contains the text, with the id and the lines of each platform.",
+        "fr": "Trouve les arrêts dont le nom contient le texte, avec l'identifiant et les lignes de chaque quai."
+      },
+      "fields": [
+        {
+          "key": "query",
+          "type": "string",
+          "required": true,
+          "label": { "en": "Part of the name", "fr": "Partie du nom" },
+          "placeholder": { "en": "Louise", "fr": "Louise" }
+        }
+      ]
+    }
+  ],
+  "widgets": [
+    {
+      "key": "departures",
+      "label": { "en": "STIB departures", "fr": "Départs STIB" },
+      "description": {
+        "en": "The next metros, trams and buses of a watched stop: line, destination, time, countdown.",
+        "fr": "Les prochains métros, trams et bus d'un arrêt suivi : ligne, destination, heure, compte à rebours."
+      },
+      "icon": "navigation",
+      "settings": [
+        {
+          "key": "device",
+          "type": "select",
+          "source": "devices",
+          "required": true,
+          "label": { "en": "Stop", "fr": "Arrêt" }
+        }
+      ]
+    },
+    {
+      "key": "network",
+      "label": { "en": "STIB network", "fr": "Réseau STIB" },
+      "description": {
+        "en": "The travellers information notices for your stops and lines (STIB network device required).",
+        "fr": "Les avis aux voyageurs pour vos arrêts et lignes (appareil Réseau STIB requis)."
+      },
+      "icon": "alert-triangle",
+      "settings": [
+        {
+          "key": "lines",
+          "type": "string",
+          "required": false,
+          "label": {
+            "en": "Lines (empty: those of your stops)",
+            "fr": "Lignes (vide : celles de vos arrêts)"
+          },
+          "placeholder": { "en": "2, 6, 92", "fr": "2, 6, 92" }
+        }
+      ]
+    }
+  ],
+  "scene_triggers": [
+    {
+      "key": "departure_approaching",
+      "label": { "en": "STIB vehicle approaching", "fr": "Véhicule STIB imminent" },
+      "description": {
+        "en": "A metro, tram or bus of a watched stop now arrives in less than the chosen number of minutes.",
+        "fr": "Un métro, tram ou bus d'un arrêt suivi arrive désormais dans moins du nombre de minutes choisi."
+      },
+      "fields": [
+        {
+          "key": "stop",
+          "type": "select",
+          "source": "devices",
+          "required": true,
+          "label": { "en": "Stop", "fr": "Arrêt" }
+        },
+        {
+          "key": "threshold",
+          "type": "select",
+          "required": true,
+          "label": { "en": "Minutes before arrival", "fr": "Minutes avant l'arrivée" },
+          "options": [
+            { "value": "1", "label": { "en": "1 minute", "fr": "1 minute" } },
+            { "value": "2", "label": { "en": "2 minutes", "fr": "2 minutes" } },
+            { "value": "3", "label": { "en": "3 minutes", "fr": "3 minutes" } },
+            { "value": "5", "label": { "en": "5 minutes", "fr": "5 minutes" } },
+            { "value": "10", "label": { "en": "10 minutes", "fr": "10 minutes" } },
+            { "value": "15", "label": { "en": "15 minutes", "fr": "15 minutes" } }
+          ]
+        },
+        {
+          "key": "line",
+          "type": "string",
+          "required": false,
+          "label": { "en": "Line (empty: any)", "fr": "Ligne (vide : toutes)" },
+          "placeholder": { "en": "92", "fr": "92" }
+        }
+      ],
+      "variables": [
+        { "key": "line", "type": "string", "label": { "en": "Line", "fr": "Ligne" } },
+        {
+          "key": "destination",
+          "type": "string",
+          "label": { "en": "Destination", "fr": "Destination" }
+        },
+        {
+          "key": "minutes",
+          "type": "number",
+          "label": { "en": "Minutes before arrival", "fr": "Minutes avant l'arrivée" }
+        },
+        {
+          "key": "expected_at",
+          "type": "string",
+          "label": { "en": "Expected arrival (ISO)", "fr": "Arrivée prévue (ISO)" }
+        }
+      ]
+    },
+    {
+      "key": "last_departure",
+      "label": { "en": "STIB last departure of the day", "fr": "Dernier passage STIB du jour" },
+      "description": {
+        "en": "STIB announces the last departure of the day of a line at a watched stop (once per line and direction).",
+        "fr": "La STIB annonce le dernier passage du jour d'une ligne à un arrêt suivi (une fois par ligne et direction)."
+      },
+      "fields": [
+        {
+          "key": "stop",
+          "type": "select",
+          "source": "devices",
+          "required": true,
+          "label": { "en": "Stop", "fr": "Arrêt" }
+        },
+        {
+          "key": "line",
+          "type": "string",
+          "required": false,
+          "label": { "en": "Line (empty: any)", "fr": "Ligne (vide : toutes)" },
+          "placeholder": { "en": "92", "fr": "92" }
+        }
+      ],
+      "variables": [
+        { "key": "line", "type": "string", "label": { "en": "Line", "fr": "Ligne" } },
+        {
+          "key": "destination",
+          "type": "string",
+          "label": { "en": "Destination", "fr": "Destination" }
+        },
+        {
+          "key": "minutes",
+          "type": "number",
+          "label": { "en": "Minutes before arrival", "fr": "Minutes avant l'arrivée" }
+        },
+        {
+          "key": "expected_at",
+          "type": "string",
+          "label": { "en": "Expected arrival (ISO)", "fr": "Arrivée prévue (ISO)" }
+        }
+      ]
+    },
+    {
+      "key": "line_disrupted",
+      "label": { "en": "STIB line disrupted", "fr": "Ligne STIB perturbée" },
+      "description": {
+        "en": "STIB published a travellers information notice (disruption, works, diversion) for a line (STIB network device required).",
+        "fr": "La STIB a publié un avis aux voyageurs (perturbation, travaux, déviation) pour une ligne (appareil Réseau STIB requis)."
+      },
+      "fields": [
+        {
+          "key": "line",
+          "type": "string",
+          "required": false,
+          "label": { "en": "Line (empty: any)", "fr": "Ligne (vide : toutes)" },
+          "placeholder": { "en": "92", "fr": "92" }
+        },
+        {
+          "key": "scope",
+          "type": "select",
+          "required": false,
+          "label": { "en": "Concerning (empty: any)", "fr": "Concernant (vide : tout)" },
+          "options": [
+            {
+              "value": "mine",
+              "label": { "en": "My stops and lines", "fr": "Mes arrêts et lignes" }
+            },
+            {
+              "value": "other",
+              "label": { "en": "The rest of the network", "fr": "Le reste du réseau" }
+            }
+          ]
+        }
+      ],
+      "variables": [
+        { "key": "line", "type": "string", "label": { "en": "Line", "fr": "Ligne" } },
+        { "key": "notice", "type": "string", "label": { "en": "Notice", "fr": "Avis" } },
+        {
+          "key": "lines",
+          "type": "string",
+          "label": { "en": "Lines concerned", "fr": "Lignes concernées" }
+        },
+        {
+          "key": "stops",
+          "type": "number",
+          "label": { "en": "Stops concerned", "fr": "Arrêts concernés" }
+        },
+        {
+          "key": "notice_id",
+          "type": "string",
+          "label": { "en": "Notice id", "fr": "Identifiant de l'avis" }
+        }
+      ]
+    },
+    {
+      "key": "disruption_cleared",
+      "label": { "en": "STIB disruption cleared", "fr": "Perturbation STIB levée" },
+      "description": {
+        "en": "STIB withdrew a travellers information notice of a line (STIB network device required).",
+        "fr": "La STIB a retiré un avis aux voyageurs d'une ligne (appareil Réseau STIB requis)."
+      },
+      "fields": [
+        {
+          "key": "line",
+          "type": "string",
+          "required": false,
+          "label": { "en": "Line (empty: any)", "fr": "Ligne (vide : toutes)" },
+          "placeholder": { "en": "92", "fr": "92" }
+        },
+        {
+          "key": "scope",
+          "type": "select",
+          "required": false,
+          "label": { "en": "Concerning (empty: any)", "fr": "Concernant (vide : tout)" },
+          "options": [
+            {
+              "value": "mine",
+              "label": { "en": "My stops and lines", "fr": "Mes arrêts et lignes" }
+            },
+            {
+              "value": "other",
+              "label": { "en": "The rest of the network", "fr": "Le reste du réseau" }
+            }
+          ]
+        }
+      ],
+      "variables": [
+        { "key": "line", "type": "string", "label": { "en": "Line", "fr": "Ligne" } },
+        { "key": "notice", "type": "string", "label": { "en": "Notice", "fr": "Avis" } },
+        {
+          "key": "lines",
+          "type": "string",
+          "label": { "en": "Lines concerned", "fr": "Lignes concernées" }
+        },
+        {
+          "key": "stops",
+          "type": "number",
+          "label": { "en": "Stops concerned", "fr": "Arrêts concernés" }
+        },
+        {
+          "key": "notice_id",
+          "type": "string",
+          "label": { "en": "Notice id", "fr": "Identifiant de l'avis" }
+        }
+      ]
+    }
+  ],
+  "scene_actions": [
+    {
+      "key": "get_next_departures",
+      "label": { "en": "STIB next departures", "fr": "STIB prochains départs" },
+      "description": {
+        "en": "The next metros, trams and buses of a watched stop, for a message or a condition that follows.",
+        "fr": "Les prochains métros, trams et bus d'un arrêt suivi, pour un message ou une condition qui suit."
+      },
+      "timeout_seconds": 20,
+      "fields": [
+        {
+          "key": "device",
+          "type": "select",
+          "source": "devices",
+          "required": true,
+          "label": { "en": "Stop", "fr": "Arrêt" }
+        }
+      ],
+      "outputs": [
+        { "key": "stop", "type": "string", "label": { "en": "Stop", "fr": "Arrêt" } },
+        {
+          "key": "count",
+          "type": "number",
+          "label": { "en": "Departures found", "fr": "Départs trouvés" }
+        },
+        {
+          "key": "list",
+          "type": "string",
+          "label": { "en": "Departures, one per line", "fr": "Départs, un par ligne" }
+        },
+        {
+          "key": "next_line",
+          "type": "string",
+          "label": { "en": "Next line", "fr": "Prochaine ligne" }
+        },
+        {
+          "key": "next_destination",
+          "type": "string",
+          "label": { "en": "Next destination", "fr": "Prochaine destination" }
+        },
+        {
+          "key": "next_minutes",
+          "type": "number",
+          "label": {
+            "en": "Minutes before the next departure",
+            "fr": "Minutes avant le prochain départ"
+          }
+        },
+        {
+          "key": "next_time",
+          "type": "string",
+          "label": {
+            "en": "Expected time of the next departure (ISO)",
+            "fr": "Heure prévue du prochain départ (ISO)"
+          }
+        },
+        {
+          "key": "message",
+          "type": "string",
+          "label": { "en": "STIB message of the stop", "fr": "Message STIB de l'arrêt" }
+        }
+      ]
+    }
+  ]
+}

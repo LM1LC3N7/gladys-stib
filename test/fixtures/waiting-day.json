@@ -1,0 +1,74 @@
+{
+  "results": [
+    {
+      "pointid": "8321",
+      "lineid": "2",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T08:01:35.515+02:00\",\"lineId\":\"2\"},{\"destination\":{\"fr\":\"SIMONIS\",\"nl\":\"SIMONIS\"},\"expectedArrivalTime\":\"2026-10-14T08:07:35.835+02:00\",\"lineId\":\"2\"}]"
+    },
+    {
+      "pointid": "8321",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"ROI BAUDOUIN\",\"nl\":\"KONING BOUDEWIJN\"},\"expectedArrivalTime\":\"2026-10-14T08:04:10+02:00\",\"lineId\":\"6\"},{\"destination\":{\"fr\":\"ROI BAUDOUIN\",\"nl\":\"KONING BOUDEWIJN\"},\"expectedArrivalTime\":\"2026-10-14T08:11:50+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "8322",
+      "lineid": "2",
+      "passingtimes": "[{\"destination\":{\"fr\":\"ELISABETH\",\"nl\":\"ELISABETH\"},\"expectedArrivalTime\":\"2026-10-14T08:00:40.480+02:00\",\"lineId\":\"2\"},{\"destination\":{\"fr\":\"ELISABETH\",\"nl\":\"ELISABETH\"},\"expectedArrivalTime\":\"2026-10-14T08:06:40.800+02:00\",\"lineId\":\"2\"}]"
+    },
+    {
+      "pointid": "8322",
+      "lineid": "6",
+      "passingtimes": "[{\"destination\":{\"fr\":\"ELISABETH\",\"nl\":\"ELISABETH\"},\"expectedArrivalTime\":\"2026-10-14T08:04:50+02:00\",\"lineId\":\"6\"},{\"destination\":{\"fr\":\"ELISABETH\",\"nl\":\"ELISABETH\"},\"expectedArrivalTime\":\"2026-10-14T08:10:50+02:00\",\"lineId\":\"6\"}]"
+    },
+    {
+      "pointid": "6361",
+      "lineid": "92",
+      "passingtimes": "[{\"destination\":{\"fr\":\"SCHAERBEEK GARE\",\"nl\":\"SCHAARBEEK STATION\"},\"expectedArrivalTime\":\"2026-10-14T08:03:00.660+02:00\",\"lineId\":\"92\"},{\"destination\":{\"fr\":\"SCHAERBEEK GARE\",\"nl\":\"SCHAARBEEK STATION\"},\"expectedArrivalTime\":\"2026-10-14T08:13:00.860+02:00\",\"lineId\":\"92\"}]"
+    },
+    {
+      "pointid": "6361",
+      "lineid": "93",
+      "passingtimes": "[{\"destination\":{\"fr\":\"STADE\",\"nl\":\"STADION\"},\"expectedArrivalTime\":\"2026-10-14T08:07:00+02:00\",\"lineId\":\"93\"},{\"destination\":{\"fr\":\"STADE\",\"nl\":\"STADION\"},\"expectedArrivalTime\":\"2026-10-14T08:17:00+02:00\",\"lineId\":\"93\"}]"
+    },
+    {
+      "pointid": "6361",
+      "lineid": "8",
+      "passingtimes": "[{\"destination\":{\"fr\":\"LOUISE\",\"nl\":\"LOUIZA\"},\"expectedArrivalTime\":\"2026-10-14T08:10:00.200+02:00\",\"lineId\":\"8\"},{\"destination\":{\"fr\":\"LOUISE\",\"nl\":\"LOUIZA\"},\"expectedArrivalTime\":\"2026-10-14T08:25:00.500+02:00\",\"lineId\":\"8\"}]"
+    },
+    {
+      "pointid": "6314",
+      "lineid": "92",
+      "passingtimes": "[{\"destination\":{\"fr\":\"FORT-JACO\",\"nl\":\"FORT-JACO\"},\"expectedArrivalTime\":\"2026-10-14T08:02:10+02:00\",\"lineId\":\"92\"},{\"destination\":{\"fr\":\"FORT-JACO\",\"nl\":\"FORT-JACO\"},\"expectedArrivalTime\":\"2026-10-14T08:12:10+02:00\",\"lineId\":\"92\"}]"
+    },
+    {
+      "pointid": "6314",
+      "lineid": "93",
+      "passingtimes": "[{\"destination\":{\"fr\":\"LEGRAND\",\"nl\":\"LEGRAND\"},\"expectedArrivalTime\":\"2026-10-14T08:09:20.720+02:00\",\"lineId\":\"93\"},{\"destination\":{\"fr\":\"LEGRAND\",\"nl\":\"LEGRAND\"},\"expectedArrivalTime\":\"2026-10-14T08:19:20.920+02:00\",\"lineId\":\"93\"}]"
+    },
+    {
+      "pointid": "6314",
+      "lineid": "8",
+      "passingtimes": "[{\"destination\":{\"fr\":\"ROODEBEEK\",\"nl\":\"ROODEBEEK\"},\"expectedArrivalTime\":\"2026-10-14T08:05:00+02:00\",\"lineId\":\"8\"},{\"destination\":{\"fr\":\"ROODEBEEK\",\"nl\":\"ROODEBEEK\"},\"expectedArrivalTime\":\"2026-10-14T08:20:00+02:00\",\"lineId\":\"8\"}]"
+    },
+    {
+      "pointid": "3518B",
+      "lineid": "54",
+      "passingtimes": "[{\"destination\":{\"fr\":\"FOREST (BERVOETS)\",\"nl\":\"VORST (BERVOETS)\"},\"expectedArrivalTime\":\"2026-10-14T08:05:30.210+02:00\",\"lineId\":\"54\"},{\"destination\":{\"fr\":\"FOREST (BERVOETS)\",\"nl\":\"VORST (BERVOETS)\"},\"expectedArrivalTime\":\"2026-10-14T08:25:30.610+02:00\",\"lineId\":\"54\"}]"
+    },
+    {
+      "pointid": "3518B",
+      "lineid": "71",
+      "passingtimes": "[{\"destination\":{\"fr\":\"DELTA\",\"nl\":\"DELTA\"},\"expectedArrivalTime\":\"2026-10-14T08:01:15+02:00\",\"lineId\":\"71\"},{\"destination\":{\"fr\":\"DELTA\",\"nl\":\"DELTA\"},\"expectedArrivalTime\":\"2026-10-14T08:09:15+02:00\",\"lineId\":\"71\"}]"
+    }
+  ],
+  "total_count": 12,
+  "parameters": {
+    "where": "pointid in (\"8321\",\"8322\",\"6361\",\"6314\",\"3518B\")",
+    "limit": 1000
+  },
+  "metadata": {
+    "fields": ["pointid", "lineid", "passingtimes"],
+    "data_processed_count": 2412,
+    "filtered_count": 12
+  }
+}
