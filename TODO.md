@@ -2,7 +2,7 @@
 
 ## Before announcing
 
-- [ ] Test on a real Gladys 5.1+: discovery with a located house (every
+- [ ] Test on a real Gladys 5.3+: discovery with a located house (every
       platform of the nearest stops), a typed stop with a line filter, the two
       widgets, the "vehicle approaching" trigger during a commute.
 - [ ] Create a free account on the developer portal, subscribe, and run a
